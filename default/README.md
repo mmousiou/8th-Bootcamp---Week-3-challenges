@@ -13,7 +13,7 @@ In this repository you can find the lwc component, app page and app page tab for
    - Install Visual Studio Code
    - Install the Visual Studio Code Salesforce extensions, including the Lightning Web Components extension
 
-1. Clone this repository by cliking code and Download ZIP
+1. Clone this repository by cliking Code ==> Download ZIP in the [main folder](https://github.com/mmousiou/8th-Bootcamp---Week-3-challenges)
 
 1. Authorize your Trailhead Playground or Developer org and provide it with an alias (**mydevorg** in the command below):
 
@@ -22,13 +22,13 @@ In this repository you can find the lwc component, app page and app page tab for
    ```
 
 1. Deploy the sub-folders in the default folder with the following order
-   (by right clicking each folder in (force-app\main\default) and select *SFDX: Deploy Source to Org*)
+   *(by right clicking each folder in (force-app\main\default) and select SFDX: Deploy Source to Org)*
    - flexipages
    - classes
    - lwc
    - tabs
    - application
-   - the default folder (Right click the default folder (force-app\main\default) and select *SFDX: Deploy Source to Org*)
+   - the default folder *(Right click the default folder (force-app\main\default) and select SFDX: Deploy Source to Org)*
 
 1. If your org isn't already open, open it now:
 
