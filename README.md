@@ -7,7 +7,7 @@ This repository contains the daily challenges of the third week's afternoon sess
 
 - [Code Logger](https://github.com/mmousiou/8th--Bootcamp---Week-3-challenges/blob/main/Log%20your%20code/README.md)
   
-- [Astronaut Challenge](https://github.com/mmousiou/8th--Bootcamp---Week-3-challenges/blob/main/astronaut%20challenge/README.md)
+- [Astronaut Challenge](https://github.com/mmousiou/8th-Bootcamp---Week-3-challenges/blob/main/astronaut%20challenge/README.md)
 
 - [Dice Game Challenge](https://github.com/mmousiou/8th--Bootcamp---Week-3-challenges/blob/main/default/lwc/diceGameChallenge/README.md)
 
