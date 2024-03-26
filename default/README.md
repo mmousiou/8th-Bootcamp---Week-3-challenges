@@ -22,18 +22,13 @@ In this repository you can find the lwc component, app page and app page tab for
    ```
 
 1. Deploy the sub-folders in the default folder with the following order
-   flexipages
-   classes
-   lwc
-   tabs
-   application
-   all the default folder
-
-   ```
-   sfdx force:source:deploy -p force-app
-   ```
-   
-   or Right click the default folder (force-app\main\default) and select *SFDX: Deploy Source to Org*
+   (by right clicking each folder in (force-app\main\default) and select *SFDX: Deploy Source to Org*)
+   - flexipages
+   - classes
+   - lwc
+   - tabs
+   - application
+   - the default folder (Right click the default folder (force-app\main\default) and select *SFDX: Deploy Source to Org*)
 
 1. If your org isn't already open, open it now:
 
