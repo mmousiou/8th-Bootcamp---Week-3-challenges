@@ -1,4 +1,4 @@
-# Dice Game App (Bootcamp '23 - Week3)
+# Dice Game App && Pokedex App (8th Bootcamp - Week3)
 
 In this repository you can find the lwc component, app page and app page tab for *Dice Game* application. Follow the instructions to deploy the code in your org.
 
