@@ -1,0 +1,73 @@
+<template>
+  <div class="body">
+    <div class="main">
+      <!-- player1 - screen -->
+      <div class="player playerP1 player--active">
+        <h2 class="name" data-id="nameP1">
+          <span class="nameP1--winner hidden">🏆</span>
+          Player 1</h2>
+        <p class="score" data-id="scoreP1">{scoreP1}</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" data-id="currentP1">{currentP1}</p>
+        </div>
+      </div>
+      <!-- player2 - screen -->
+      <div class="player playerP2">
+        <h2 class="name" data-id="nameP2"><span class="nameP2--winner hidden">🏆</span>Player 2</h2>
+        <!-- TODO #1. Set the score variable scoreP2 for P2. (html - l19) -->
+        <p class="score" data-id="scoreP2"></p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <!-- TODO #2. Set the current score variable currentP2 for P2. (html - l23) -->
+          <p class="current-score" data-id="currentP2"></p>
+        </div>
+      </div>
+      <!-- buttons -->
+      <button class="btn btn--new" onclick={handleNewBtnClicked}>🔄 New game</button>
+      <!-- TODO #3. Connect the handleRollBtnClicked and handleHoldBtnClicked functions to the appropriates button elements -->
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+    </div>
+  </div>
+  <!-- 3D dice -->
+  <div class="game">
+    <div class="container">
+      <div data-id='dice1' class="dice dice-one">
+        <div data-id="dice-one-side-one" class='side one'>
+          <div class="dot one-1"></div>
+        </div>
+        <div data-id="dice-one-side-two" class='side two'>
+          <div class="dot two-1"></div>
+          <div class="dot two-2"></div>
+        </div>
+        <div data-id="dice-one-side-three" class='side three'>
+          <div class="dot three-1"></div>
+          <div class="dot three-2"></div>
+          <div class="dot three-3"></div>
+        </div>
+        <div data-id="dice-one-side-four" class='side four'>
+          <div class="dot four-1"></div>
+          <div class="dot four-2"></div>
+          <div class="dot four-3"></div>
+          <div class="dot four-4"></div>
+        </div>
+        <div data-id="dice-one-side-five" class='side five'>
+          <div class="dot five-1"></div>
+          <div class="dot five-2"></div>
+          <div class="dot five-3"></div>
+          <div class="dot five-4"></div>
+          <div class="dot five-5"></div>
+        </div>
+        <div data-id="dice-one-side-six" class='side six'>
+          <div class="dot six-1"></div>
+          <div class="dot six-2"></div>
+          <div class="dot six-3"></div>
+          <div class="dot six-4"></div>
+          <div class="dot six-5"></div>
+          <div class="dot six-6"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

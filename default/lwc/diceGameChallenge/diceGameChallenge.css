@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+@font-face
+{
+    font-family:'Nunito';
+    src:url(/resource/Nunito_regular);
+}
+
+iframe {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 40%;
+  box-sizing: border-box;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.main {
+  zoom:70%;
+  position: absolute;
+  top: 110px;
+  width: 100rem;
+  height: 60rem; 
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  overflow: hidden;
+  display: flex;
+}
+
+@media (min-width: 100rem) {
+  .game {
+    /* zoom: 81%; */
+    top: 290px;
+  }
+}
+
+@media (min-width: 80rem) and (max-width: 100rem) {
+  .main {
+      zoom: 55%;
+  }
+  .game {
+    zoom: 81%;
+    top: 280px;
+  }
+}
+
+@media (max-width: 80rem) {
+  .main {
+      zoom: 47%;
+  }
+  .game {
+    zoom: 70%;
+    top:270px;
+  }
+}
+
+.player {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  flex: 50%;
+  padding: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+}
+
+/* ELEMENTS */
+.name {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  position: relative;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.score {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-size: 8rem;
+  font-weight: 300;
+  color: #c7365f;
+  margin-bottom: auto;
+}
+
+.player--active {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-style: double;
+  border-color: rgba(255, 255, 255, 0.596);
+}
+.player--active .name {
+  font-weight: 700;
+}
+.player--active .score {
+  font-weight: 400;
+}
+
+.player--active .current {
+  opacity: 1;
+}
+
+.current {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  background-color: #c7365f;
+  opacity: 0.8;
+  border-radius: 9px;
+  color: #fff;
+  width: 65%;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.75s;
+}
+
+.current-label {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  color: #ddd;
+}
+
+.current-score {
+  font-size: 3.5rem;
+}
+
+/* ABSOLUTE POSITIONED ELEMENTS */
+.btn {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.btn::first-letter {
+  font-size: 2.4rem;
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.btn--new {
+  top: 4rem;
+}
+.btn--roll {
+  top: 39.3rem;
+}
+.btn--hold {
+  top: 46.1rem;
+}
+
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.player--winner {
+  background-color: #2f2f2f;
+}
+
+.player--winner .name {
+  font-weight: 700;
+  color: #c7365f;
+}
+
+.hidden {
+  display: none;
+}
+/* dice roll */
+.game {
+  /* position: relative; */
+  width: auto;
+  height: 100%; 
+  position: absolute;
+  left: calc(50% - 50px);
+  /* top: 300px; */
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+  /* left: calc(50% - 50px); */
+  /* top: -25.5rem; */
+}
+
+.dice {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d;
+  transition: transform 1s; 
+}
+
+.dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: -10px 5px 5px -10px;
+  border-radius: 20px;
+  background-color: #f25f5c;
+  box-shadow: inset 2px 2px #d90429;
+}
+
+.dice-one {
+  position: absolute;
+  /* left: 150px;  */
+}
+
+.side {
+  position: absolute;
+  background-color: #ffF;
+  border-radius:5px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  line-height: 2em;
+}
+
+.side:nth-child(1) {
+  transform: translateZ(3.1em); }
+
+.side:nth-child(6) {
+  transform: rotateY(90deg) translateZ(3.1em); }
+
+.side:nth-child(3) {
+  transform: rotateY(-90deg) translateZ(3.1em); }
+
+.side:nth-child(4) {
+  transform: rotateX(90deg) translateZ(3.1em); }
+
+.side:nth-child(5) {
+  transform: rotateX(-90deg) translateZ(3.1em); }
+
+.side:nth-child(2) {
+  transform: rotateY(-180deg) translateZ(3.1em); }
+
+.show-1 {
+  transform: rotateX(720deg) rotateZ(-720deg); }
+
+.show-6 {
+  transform: rotateX(-900deg) rotateZ(1080deg); }
+
+.show-3 {
+  transform: rotateY(-450deg) rotateZ(-1440deg); }
+
+.show-4 {
+  transform: rotateY(810deg) rotateZ(720deg); }
+
+.show-5 {
+  transform: rotateX(-810deg) rotateZ(-1080deg); }
+
+.show-2 {
+  transform: rotateX(450deg) rotateZ(-720deg); }
+
+.two-1, .three-1, .four-1, .five-1, .six-1 {
+  top: 20%;
+  left: 20%; 
+}
+
+.four-3, .five-3, .six-4 {
+  top: 20%;
+  left: 80%; }
+
+.one-1, .three-2, .five-5 {
+  top: 50%;
+  left: 50%; }
+
+.four-2, .five-2, .six-3 {
+  top: 80%;
+  left: 20%; }
+
+.two-2, .three-3, .four-4, .five-4, .six-6 {
+  top: 80%;
+  left: 80%; }
+
+.six-2 {
+  top: 50%;
+  left: 20%; }
+
+.six-5 {
+  top: 50%;
+  left: 80%; 
+}

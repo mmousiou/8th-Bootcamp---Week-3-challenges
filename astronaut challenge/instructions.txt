@@ -1,0 +1,78 @@
+*********************** Part 1 (30mins) **************************************************************************
+
+-----------------------------------------------------------------------------------------------
+===> index.html file
+-----------------------------------------------------------------------------------------------
+1. link the other two style sheets existing in the astronaut challenge folder
+2. Add a h1 element with the title "How Many people are in space 🌌?"
+3. Add a button element with the "btn" class and label "Calculate"
+4. Link the 'scriptWithAsync.js' file using <script> tag
+
+-----------------------------------------------------------------------------------------------
+===> style.css file
+-----------------------------------------------------------------------------------------------
+5. add a class name hidden which will modify the display attribute to none
+
+-----------------------------------------------------------------------------------------------
+===> scriptWithAsync.js file
+-----------------------------------------------------------------------------------------------
+6. Add a variable to store the button element added on the html, 
+    you can use getElementById method of the document element to access the button
+7. Call init function
+8. use addEventListener method (https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+        and a callback function in the button element created in step 6. 
+        a. The callback function must me asynchronous (async keyword must be used)
+        b. the callback function will call and await the fetchData function 
+            (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
+        c. The callback function must remove the hidden class added to the outcome element in the init function
+9.  a. Use the fetch API as shown in the documentation https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch 
+                to fetch the data from apiUrl
+            b. store the respose in a variable called response (as shown in the step 9.a link)
+            c. store the response json in a variable called data (as shown in the step 9.a link)
+            d. console.log the data variable and see the results of the API call
+            Hint: the data object should be like this: data = { people: [array], number: num, message: 'success' }
+10. Store in the numberOfPeople variable the data attribute that has the number of people
+11. a. For each item of the peopleArray create a temp line like this: '<p>&nbsp🧑name, 🚀spacecraftName</p>' 
+            b. Add the line to moreInfoOutput string
+            c. print the moreInfoOutput in the '.outcome__people__info' element
+12. Print the moreInfoOutput in the '.outcome__people__info' element
+***********************************************************************************************************************************
+
+************************************************ Part 2 (5 mins) ******************************************************************
+13. Copy the scriptWithAsync.js and paste it in the same folder but rename it 'scriptWithThen.js'
+14. Remove the async...await of the functions along with the result and data variable assignment inside the fetchData
+15. Use the fetchPromise.then(response => get response json).then(data => {move all the logic from console.log(data) until the end of try block})
+    help: https://www.developerway.com/posts/fetching-in-react-lost-promises
+    You can keep the try...catch or replace it with .catch((err) => {handle error})
+16. In the html replace the src of the script tag to point to 'scriptWithThen.js'
+17. The results are rendering twice (once with the initial values and once with the correct values) can you explain why?
+***********************************************************************************************************************************
+
+************************************************ Part 3 (10 mins) ******************************************************************
+18. Switch back to 'scriptWithAsync.js'
+19. Replace the Calculate text inside the button block with this:
+    <span class="btn__label">calculate</span>
+    <span class="loader">
+        <span class="loader__element"></span>
+        <span class="loader__element"></span>
+        <span class="loader__element"></span>
+    </span>
+20. In the js file add in the beggining two more variables, one to select the '.loader' and one to select the '.btn__label' elements.
+21. In the init the style.display attribute to hide the '.loader' element (it's the same logic as the hidden class)
+22. In the calculate callback function we should have the logic
+    hide btn label (add hidden class)
+    show loading dots (style.display = 'flex')
+    ***** fetching data ******
+    hide loading dots (you did the same in step4)
+    show button label (remove hidden)
+***********************************************************************************************************************************
+
+************************************************ Part 4 (5 mins) ******************************************************************
+23. (html) Inside the outcome div add after the last <p> element
+    <div>
+        <a href="" class="showLess" target="">>> Hide Results</a>
+    </div>
+24. (.js) Add a variable and save the '.showLess' element
+25. Add an click event listener to the element and in the callback function add hidden to the outcome element
+***********************************************************************************************************************************
+Congradulations you finshed the challenge!!!!🎉🎉💫✨🌟
