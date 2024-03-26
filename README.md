@@ -9,9 +9,9 @@ This repository contains the daily challenges of the third week's afternoon sess
   
 - [Astronaut Challenge](https://github.com/mmousiou/8th-Bootcamp---Week-3-challenges/blob/main/astronaut%20challenge/README.md)
 
-- [Dice Game Challenge](https://github.com/mmousiou/8th--Bootcamp---Week-3-challenges/blob/main/default/lwc/diceGameChallenge/README.md)
+- [Dice Game Challenge](https://github.com/mmousiou/8th-Bootcamp---Week-3-challenges/blob/main/default/README.md)
 
-- [Pokedex Challenge](https://github.com/mmousiou/8th--Bootcamp---Week-3-challenges/blob/main/default/lwc/pokedexChallenge/README.md)
+- [Pokedex Challenge](https://github.com/mmousiou/8th-Bootcamp---Week-3-challenges/blob/main/default/README.md)
 
 - [Final Excercise] (to be added)
   
