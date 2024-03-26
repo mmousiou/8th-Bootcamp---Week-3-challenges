@@ -13,12 +13,7 @@ In this repository you can find the lwc component, app page and app page tab for
    - Install Visual Studio Code
    - Install the Visual Studio Code Salesforce extensions, including the Lightning Web Components extension
 
-1. Clone this repository:
-
-   ```
-   git clone https://github.com/mmousiou/Dice-Game--Bootcamp---Week3-.git
-   cd Dice-Game--Bootcamp---Week3-
-   ```
+1. Clone this repository by cliking code and Download ZIP
 
 1. Authorize your Trailhead Playground or Developer org and provide it with an alias (**mydevorg** in the command below):
 
@@ -26,7 +21,13 @@ In this repository you can find the lwc component, app page and app page tab for
    sfdx auth:web:login -s -a mydevorg
    ```
 
-1. Run this command in a terminal to deploy the app.
+1. Deploy the sub-folders in the default folder with the following order
+   flexipages
+   classes
+   lwc
+   tabs
+   application
+   all the default folder
 
    ```
    sfdx force:source:deploy -p force-app
@@ -40,7 +41,7 @@ In this repository you can find the lwc component, app page and app page tab for
    sfdx force:org:open -u mydevorg
    ```
 
-1. In your salesforce org create an app and add the Dice Game App page in the navigation items.
+1. In your salesforce org assign the permission set week3Challenges to your user.
 
 
 ## Optional Installation Instructions
