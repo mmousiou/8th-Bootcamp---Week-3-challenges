@@ -24,5 +24,5 @@ This repository contains the daily challenges of the third week's afternoon sess
 * Read the README.md files and follow the instructions given to you during the bootcamp for each challenge.
 
 ## Info
-Authors: mmousiou@gmail.com, nikaxilleas@gmail.com
+Authors: mmousiou@gmail.com, anestisaslanidis1997@gmail.com
   
