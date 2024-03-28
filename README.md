@@ -23,7 +23,7 @@ This repository contains the daily challenges of the third week's afternoon sess
 * Each folder represents a specific challenge.
 * Read the README.md files and follow the instructions given to you during the bootcamp for each challenge.
 
-## Finala Exercise
+## Finale Exercise
 [Week3 - Challenges](https://github.com/mmousiou/8th-Bootcamp---Week-3-challenges/blob/main/Week%203%20-%20Afternoon%20sessions.pdf) PDF, *pages: 22-23,25-26*
 
 ## Info
