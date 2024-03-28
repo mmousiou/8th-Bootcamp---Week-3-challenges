@@ -13,7 +13,7 @@ This repository contains the daily challenges of the third week's afternoon sess
 
 - [Pokedex Challenge](https://github.com/mmousiou/8th-Bootcamp---Week-3-challenges/blob/main/default/README.md)
 
-- [Final Excercise] (#Final_Exercise)
+- [Final Excercise](#Final_Exercise)
   
 - [Info](#info)
 
@@ -24,7 +24,7 @@ This repository contains the daily challenges of the third week's afternoon sess
 * Read the README.md files and follow the instructions given to you during the bootcamp for each challenge.
 
 ## Finala Exercise
-[Week3 - Challenges]() PDF, *pages: 22-23,25-26*
+[Week3 - Challenges](https://github.com/mmousiou/8th-Bootcamp---Week-3-challenges/blob/main/Week%203%20-%20Afternoon%20sessions.pdf) PDF, *pages: 22-23,25-26*
 
 ## Info
 Authors: mmousiou@gmail.com, anestisaslanidis1997@gmail.com
