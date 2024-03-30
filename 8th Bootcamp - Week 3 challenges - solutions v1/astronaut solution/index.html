@@ -1,0 +1,117 @@
+<!-- Astronaut App - Solution -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="astronaut.css" />
+    <link rel="stylesheet" href="btn_with_loading.css" />
+    <title>Astronaut Solution</title>
+  </head>
+  <body>
+    <main>
+      <div class="title">
+        <h1>💫How many people are in space?</h1>
+        <!-- Calculate button with onloading dots -->
+        <button id="calculate" class="btn">
+          <span class="btn__label">calculate</span>
+          <span class="loader">
+            <span class="loader__element"></span>
+            <span class="loader__element"></span>
+            <span class="loader__element"></span>
+          </span>
+        </button>
+      </div>
+      <!-- Results -->
+      <div class="results">
+        <div class='outcome'>
+          <p class='outcome__label'>============ Results ============</p>
+          <p class='outcome__label'> 👨‍👩‍👧‍👦 Number of people: <span class='outcome__people'>0</span></p>
+          <p class='outcome__label'>---------------------------------</p>
+          <p class='outcome__label'>>> More info (Name, Spacecraft): </p>
+          <div class='outcome__label outcome__people__info'></div>
+          <p class='outcome__label'>---------------------------------</p>
+          <div>
+            <a href="" class="showLess" target="">>> Hide Results</a>
+          </div>
+        </div>
+      </div>
+      <!-- Astronaut animation -->
+      <div class="backg">
+        <div class="planet">
+          <div class="r1"></div>
+          <div class="r2"></div>
+          <div class="r3"></div>
+          <div class="r4"></div>
+          <div class="r5"></div>
+          <div class="r6"></div>
+          <div class="r7"></div>
+          <div class="r8"></div>
+          <div class="shad"></div>
+        </div>
+        <div class="stars">
+          <div class="s1"></div>
+          <div class="s2"></div>
+          <div class="s3"></div>
+          <div class="s4"></div>
+          <div class="s5"></div>
+          <div class="s6"></div>
+        </div>
+        <div class="an">
+          <div class="tank"></div>
+          <div class="astro">
+            <div class="helmet">
+              <div class="glass">
+                <div class="shine"></div>
+              </div>
+            </div>
+            <div class="dress">
+              <div class="c">
+                <div class="btn1"></div>
+                <div class="btn2"></div>
+                <div class="btn3"></div>
+                <div class="btn4"></div>
+              </div>
+            </div>
+            <div class="handl">
+              <div class="handl1">
+                <div class="glovel">
+                  <div class="thumbl"></div>
+                  <div class="b2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="handr">
+              <div class="handr1">
+                <div class="glover">
+                  <div class="thumbr"></div>
+                  <div class="b1"></div>
+                </div>
+              </div>
+            </div>
+            <div class="legl">
+              <div class="bootl1">
+                <div class="bootl2"></div>
+              </div>
+            </div>
+            <div class="legr">
+              <div class="bootr1">
+                <div class="bootr2"></div>
+              </div>
+            </div>
+            <div class="pipe">
+              <div class="pipe2">
+                <div class="pipe3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Use one of the two script tags below, by commenting / uncommenting the two lines -->
+    <script src="scriptWithAsync.js"></script>
+    <!-- <script src="scriptWithThen.js"></script> -->
+  </body>
+</html>

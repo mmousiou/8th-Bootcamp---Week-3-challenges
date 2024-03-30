@@ -1,0 +1,42 @@
+<template>
+  <lightning-modal-header label="My Modal Heading"></lightning-modal-header>
+  <lightning-modal-body>
+    <lightning-spinner lwc:if={spinner} size="large"></lightning-spinner>
+    <lightning-record-edit-form
+      object-api-name="Case"
+      onsuccess={handleSuccess}
+    >
+      <lightning-messages></lightning-messages>
+      <lightning-input-field field-name="Subject"></lightning-input-field>
+      <lightning-input-field field-name="Description"></lightning-input-field>
+      <lightning-input-field
+        field-name="AccountId"
+        value={accId}
+        disabled
+      ></lightning-input-field>
+      <lightning-input-field
+        field-name="OpportunityProduct__c"
+        value={product}
+        disabled
+      ></lightning-input-field>
+      <div class="slds-align_absolute-center">
+        <lightning-button
+          class="slds-p-around_medium"
+          type="submit"
+          variant="brand"
+          name="submit"
+          label="Create Case"
+        >
+        </lightning-button>
+        <lightning-button
+          class="slds-p-around_medium"
+          type="submit"
+          name="cancel"
+          label="Cancel"
+          onclick={closeModal}
+        >
+        </lightning-button>
+      </div>
+    </lightning-record-edit-form>
+  </lightning-modal-body>
+</template>

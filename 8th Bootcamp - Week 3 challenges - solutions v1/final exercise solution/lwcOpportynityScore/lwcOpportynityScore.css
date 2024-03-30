@@ -1,0 +1,14 @@
+.warm {
+  --sds-c-icon-color-background: #e1960b;
+  transform: scale(1.3);
+}
+
+.hot {
+  --sds-c-icon-color-background: #f00b0b;
+  transform: scale(1.3);
+}
+
+.cold {
+  --sds-c-icon-color-background: #60b5ee;
+  transform: scale(1.3);
+}

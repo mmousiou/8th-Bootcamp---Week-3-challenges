@@ -1,0 +1,49 @@
+<template>
+  <div class="app-container">
+    <lightning-card variant="narrow" title="Pokedex" icon-name="standard:contract_line_item">
+      <lightning-spinner lwc:if={spinner} alternative-text="loading" size="large"></lightning-spinner>
+      <lightning-button variant="destructive" label="Reset Data" slot="actions"
+        onclick={initializeApp}></lightning-button>
+      <div class="slds-m-around_small">
+        <!-- search pokemon -->
+        <div
+          style="display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-end; margin-bottom: 1rem;">
+          <lightning-input onchange={handleChange} value={pokemonName} label="Pokemon Name"
+            class="slds-m-right_xx-small"></lightning-input>
+          <lightning-button variant="brand" label="Search Pokemon" onclick={searchPokemon}
+            disabled={disableSearch}></lightning-button>
+        </div>
+        <!-- pokemon details -->
+        <div class="slds-grid slds-wrap slds-p-around_small slds-border_bottom">
+          <div class="slds-size_1-of-4 slds-text-heading_small">Name</div>
+          <div class="slds-size_1-of-4 slds-text-heading_small">Appearance</div>
+          <div class="slds-size_1-of-4 slds-text-heading_small">Abilities</div>
+          <div class="slds-size_1-of-4 slds-text-heading_small">Stats</div>
+        </div>
+        <div lwc:if={hasData} class="slds-grid slds-wrap slds-m-around_small">
+          <div class="slds-size_1-of-4 slds-align-middle">{currentPokemon.Name}</div>
+          <div class="slds-size_1-of-4">
+            <img src={currentPokemon.imgUrl}>
+          </div>
+          <div class="slds-size_1-of-4 slds-text-color_weak slds-align-middle">
+            <ul>
+              <template for:each={currentPokemon.abilities} for:item="ability">
+                <li key={ability}>{ability.name}</li>
+              </template>
+            </ul>
+          </div>
+          <div class="slds-size_1-of-4 slds-text-color_weak slds-align-middle">
+            <ul>
+              <template for:each={currentPokemon.stats} for:item="stat">
+                <li key={stat}>{stat.name}: {stat.value}</li>
+              </template>
+            </ul>
+          </div>
+        </div>
+        <div lwc:else class="slds-text-color_error slds-align_absolute-center slds-m-around_large">
+          {errorMessage}
+        </div>
+      </div>
+    </lightning-card>
+  </div>
+</template>
